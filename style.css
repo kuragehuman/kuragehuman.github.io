@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* ヘッダー */
+
+.header {
+  height: 200px;
+  background-image: url("img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: white;
+  font-size: 40px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+/* レイアウト */
+
+.container {
+  display: flex;
+}
+
+/* サイドバー */
+
+.sidebar {
+  width: 200px;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* 本文 */
+
+.content {
+  flex: 1;
+  padding: 30px;
+}
