@@ -43,13 +43,13 @@ header h1 { font-size: 2rem; }
 /* プロジェクトカードのグリッド／横スクロール */
 .project-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap; /* 折り返さず一行に */
     gap: 1rem;
-    overflow-x: visible;
+    overflow-x: auto;  /* 横スクロール可能に */
+    padding-bottom: 1rem; /* スクロールバー分の余白 */
+    -webkit-overflow-scrolling: touch; /* スマホでスムーズスクロール */
 }
 
-/* 個別カード */
 .project-card {
     background-color: white;
     border-radius: 10px;
@@ -61,6 +61,7 @@ header h1 { font-size: 2rem; }
     flex-direction: column;
     align-items: center;
     transition: transform 0.2s ease;
+    flex: 0 0 auto; /* 幅固定で縮まないように */
 }
 
 .project-card:hover {
