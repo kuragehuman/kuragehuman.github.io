@@ -117,7 +117,7 @@ function updateBoneLines() {
 // GLB読み込み
 const loader = new GLTFLoader();
 let mixer, model;
-loader.load('model.glb',
+loader.load('models/model.glb',
   gltf => {
     model = gltf.scene;
     scene.add(model);
